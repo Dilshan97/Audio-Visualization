@@ -85,7 +85,7 @@ function featureNotSupported() {
     return document.getElementById('no-audio').style.display = "block";
 }
 
-// function hideLoader() {
+function hideLoader() {
     return document.getElementById('loading').className = "hide";
 }
 
@@ -151,7 +151,7 @@ function createAudioControls() {
 }
 
 function toggleAudio() {
-    playing ? pauseAudio() : playAudio();
+    playAudio();
 }
 
 function playAudio() {

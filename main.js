@@ -85,7 +85,7 @@ function featureNotSupported() {
     return document.getElementById('no-audio').style.display = "block";
 }
 
-function hideLoader() {
+// function hideLoader() {
     return document.getElementById('loading').className = "hide";
 }
 
@@ -136,15 +136,15 @@ function initializeAudio() {
 function createAudioControls() {
     var playButton = document.createElement('a');
 
-    playButton.setAttribute('id', 'playcontrol');
-    playButton.textContent = "pause";
-    document.body.appendChild(playButton);
+    // playButton.setAttribute('id', 'playcontrol');
+    // playButton.textContent = "pause";
+    // document.body.appendChild(playButton);
 
-    playButton.addEventListener('click', function (e) {
-        e.preventDefault();
-        this.textContent = playing ? "play" : "pause";
-        toggleAudio();
-    });
+    // playButton.addEventListener('click', function (e) {
+    //     e.preventDefault();
+    //     this.textContent = playing ? "play" : "pause";
+    //     toggleAudio();
+    // });
 
     playAudio();
     hideLoader();
@@ -168,7 +168,7 @@ function playAudio() {
 }
 
 function pauseAudio() {
-    playing = false;
+    playing = true;
     pausedAt = Date.now() - startedAt;
     asource.stop();
 }

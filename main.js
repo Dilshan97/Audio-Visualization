@@ -1,7 +1,7 @@
 
 
 var media = [
-    "http://www.shaafm.lk/remix/data/audios/1493712787_550854961853474_shaaremix.mp3"
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg"
 ],
     fftSize = 1024,
     // [32, 64, 128, 256, 512, 1024, 2048]
